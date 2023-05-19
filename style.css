@@ -1,0 +1,1208 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*全區域Border-box */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/*設定圖片響應式*/
+img {
+	max-width: 100%;
+	/*設定最大寬度 響應式*/
+	height: auto;
+
+}
+
+h1 {
+	font-size: 48px;
+	font-family: custom-sans-serif;
+	font-weight: 700;
+	line-height: 72px;
+	letter-spacing: 2%;
+}
+
+h2 {
+	font-size: 36px;
+	font-family: custom-sans-serif;
+	font-weight: 700;
+	line-height: 54px;
+	letter-spacing: 2%;
+	color: #363636;
+
+}
+
+
+h3 {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 150%;
+	font-family: custom-sans-serif;
+	letter-spacing: 0.02em;
+	color: #363636;
+
+}
+
+h4 {
+	font-family: custom-sans-serif;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 150%;
+	/* identical to box height, or 42px */
+	letter-spacing: 0.02em;
+
+	/* Neutral/Nuetral 700 */
+
+	color: #363636;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 400;
+	font-family: custom-sans-serif;
+	line-height: 30px;
+	letter-spacing: 2%;
+	color: #363636;
+	margin-bottom: 0px;
+}
+
+mark {
+	background: #00000000;
+	padding: 2px 1px;
+}
+
+.mark{
+	background: #00000000;
+}
+
+
+
+
+.bolder {
+	font-weight: bolder;
+}
+
+.body1 {
+	font-size: 24px;
+	font-weight: 700;
+	font-family: custom-sans-serif;
+	line-height: 36px;
+	letter-spacing: 2%;
+
+}
+
+.body2 {
+	font-family: custom-sans-serif;
+	
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	text-align: start;
+	letter-spacing: 0.02em;
+	color: #363636;
+	
+}
+
+
+.marqueebackground {
+	display: flex;
+	justify-content: center;
+}
+
+.marquee ul {
+	max-width: 1440px;
+	display: flex;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.marquee li {
+	font-family: custom-sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0.08em;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+
+@font-face
+
+/*設定中文字體*/
+	{
+	font-family: custom-sans-serif;
+	src: local("Noto Sans TC");
+	unicode-range: U+4E00-9FFF;
+}
+
+@font-face
+
+/*設定英文字體*/
+	{
+	font-family: custom-sans-serif;
+	src: local("Josefin Sans");
+	unicode-range: U+00-024F;
+
+
+}
+
+mark.yellow {
+	background: linear-gradient(transparent 40%, rgba(255, 255, 255, 0) 40%, #FFF176 90%, transparent 95%);
+	padding: 2px 1px;
+}
+
+.bannerbackground {
+	display: flex;
+	justify-content: center;
+}
+
+.banner {
+
+	width: 1440px;
+	height: 757px;
+	background-image: url(../image/banner-bg.png);
+}
+
+
+.banner .container {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1076px;
+	height: 543px;
+
+}
+
+.banner .container .banner-left {
+	width: 440px;
+	height: 448px;
+	margin-top: 127px;
+	border: 2px solid #E0E0E0;
+	border-radius: 24px;
+	background: #FFFFFF;
+	position: relative;
+	
+}
+
+.banner .container .banner-left h1 {
+	position: absolute;
+	text-align: center;
+	top: -36px;
+	left: 147px;
+
+}
+
+.banner .container .banner-left .body1 {
+	position: absolute;
+	text-align: center;
+	left: 117px;
+	top: 36px;
+	color: #9A9A9A;
+}
+
+.banner .container .banner-left .body2 {
+	text-align: center;
+}
+
+.banner .container .banner-left .rocketlogo {
+	margin-top: 96px;
+	margin-left: 155px;
+	margin-bottom:16px;
+}
+
+.banner .container .banner-left .interestinglogo {
+	position: absolute;
+	margin-top: 40px;
+	margin-left: 155px;
+	margin-bottom:16px;
+}
+.banner .container .banner-left .halfmoonlogo {
+	position: absolute;
+	margin-top: 115px;
+    margin-left: 155px;
+	margin-bottom:16px;
+    
+}
+
+/*--------------------------------*/
+.banner .container .banner-right {
+	width: 440px;
+	height: 448px;
+	margin-top: 127px;
+	border: 2px solid #E0E0E0;
+	border-radius: 24px;
+	background: #FFFFFF;
+	position: relative;
+	
+}
+
+.banner .container .banner-right h1 {
+	position: absolute;
+	top: -36px;
+	left: 122px;
+
+}
+
+.banner .container .banner-right .body1 {
+	position: absolute;
+	text-align: center;
+	left: 117px;
+	top: 36px;
+	color: #9A9A9A;
+}
+
+.banner .container .banner-right .body2 {
+	text-align: center;
+}
+
+.banner .container .banner-right .rocketlogo {
+	margin-top: 96px;
+	margin-left: 155px;
+	margin-bottom:16px;
+}
+
+.banner .container .banner-right .interestinglogo {
+	position: absolute;
+	margin-top: 40px;
+	margin-left: 155px;
+	margin-bottom:16px;
+}
+.banner .container .banner-right .halfmoonlogo {
+	position: absolute;
+	margin-top: 115px;
+    margin-left: 155px;
+	margin-bottom:16px;
+    
+}
+
+
+/*--------------------------------*/
+
+
+
+.banner .container .x {
+	text-align: center;
+	margin-top: 127px;
+	margin-left: 82px;
+	margin-right: 83px;
+}
+
+.aboutrocketbackground {
+	display: flex;
+	justify-content: center;
+
+}
+
+.aboutrocket {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1440px;
+	background-color: #E5EBFF;
+	border-radius: 40px;
+	margin-top: -22px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	padding-left: 72px;
+	padding-right: 72px;
+
+
+	
+
+}
+
+.aboutrocket .word {
+
+	font-family: custom-sans-serif;
+	width: 636px;
+	height: 592px;
+
+
+}
+
+.aboutrocket .word .narrative {
+	width: 526px;
+	height: 240px;
+
+}
+
+.aboutrocket .cardbox {
+	width: 636px;
+	height: 592px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+.aboutrocket .cardbox .frontend {
+	width: 636px;
+	
+	background-color: #FFFFFF;
+	border-radius: 24px;
+	margin-bottom: 32px;
+	padding: 36px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.aboutrocket .cardbox .skillicon {
+	font-family: custom-sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 150%;
+	/* identical to box height, or 24px */
+	letter-spacing: 0.02em;
+	color: #7F94E2;
+	border: 2px solid #A6B6F1;
+	border-radius: 20px;
+	padding: 8px 16px;
+	text-align: center;
+	display: inline-block;
+	margin-right: 24px;
+
+}
+
+.aboutrocket .cardbox .englishjobtitle {
+	font-family: custom-sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 150%;
+	letter-spacing: 0.02em;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	margin-top: 64px;
+	color: #9A9A9A;
+}
+
+
+
+
+
+
+.aboutrocket .cardbox .backend {
+	width: 636px;
+	height: 280px;
+	background-color: #FFFFFF;
+	border-radius: 24px;
+	margin-bottom: 32px;
+	padding: 36px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.aboutrocket .cardbox .uxui {
+	width: 636px;
+	height: 280px;
+	background-color: #FFFFFF;
+	border-radius: 24px;
+	padding: 36px;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.scroll {
+	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: scroll;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.successcasebackground {
+
+	display: flex;
+	justify-content: center;
+
+}
+
+.successcase {
+	margin-top: 92px;
+	align-items: center;
+	width: 1440px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.successcase .title {
+
+	margin-bottom: 28px;
+	text-align: center;
+}
+
+.successcase .caseimage {
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 92px;
+
+}
+
+.successcase .caseimage img {
+	margin-bottom: 28px;
+	margin-right: 24px;
+}
+
+.abouttrainning {
+	background: #F8F9FD;
+	display: flex;
+	justify-content: center;
+}
+
+.abouttrainning .title {
+	margin: 0 auto;
+	margin-top: -30px;
+	margin-bottom: 28px;
+	text-align: center;
+	margin-top: -25px;
+	top: -25px;
+	left: 50%;
+
+}
+
+.batch {
+	background: #FFFFFF;
+	box-shadow: 0px 2px 4px #E8E8E8;
+	border-radius: 50px;
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+	width: 636px;
+	margin-bottom: 80px;
+
+}
+
+.batch .batchtitle {
+	font-weight: 700;
+	border-right: 2px solid #F0F0F0;
+	text-align: center;
+
+}
+
+
+.abouttrainning .trainningdetail .jobtitle {
+	background: #FFFFFF;
+	border: 2px solid #363636;
+	border-radius: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-left: 40px;
+	box-shadow: inset -4px -4px 0px 0px #363636;
+
+
+}
+
+.abouttrainning .trainningdetail .frontend {
+	margin-top: -20px;
+	
+	height: 588px;
+	background: #FFFFFF;
+	border: 2px solid #F0F0F0;
+	border-radius: 16px;
+	background-image: linear-gradient(to right, #F5F5F5 1px, transparent 1px),
+		linear-gradient(to bottom, #F5F5F5 1px, transparent 1px);
+	background-size: 30px 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-bottom: 80px;
+
+
+}
+
+.abouttrainning .trainningdetail .backend {
+	margin-top: -20px;
+	
+	height: 384px;
+	background: #FFFFFF;
+	border: 2px solid #F0F0F0;
+	border-radius: 16px;
+	background-image: linear-gradient(to right, #F5F5F5 1px, transparent 1px),
+		linear-gradient(to bottom, #F5F5F5 1px, transparent 1px);
+	background-size: 30px 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-bottom: 80px;
+	height: 384px;
+}
+
+.abouttrainning .trainningdetail .ui {
+	margin-top: -20px;
+	height: 356px;
+	background: #FFFFFF;
+	border: 2px solid #F0F0F0;
+	border-radius: 16px;
+	background-image: linear-gradient(to right, #F5F5F5 1px, transparent 1px),
+		linear-gradient(to bottom, #F5F5F5 1px, transparent 1px);
+	background-size: 30px 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-bottom: 80px;
+	height: 384px;
+}
+
+
+
+
+.abouttrainning .trainningdetail .smalltitle {
+	margin-top: 36px;
+
+	border-bottom: 3px solid #363636;
+	width: 82px;
+	font-family: custom-sans-serif;
+	
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	text-align: start;
+	letter-spacing: 0.02em;
+	color: #363636;
+
+
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    /* background-color: #0d6efd; */
+    background: #E6EBFF;
+    border: 2px solid #363636;
+    border-radius: 16px;
+    width: 251px;
+    height: 160px;
+    margin-right: 24px;
+	margin: 30px;
+	
+}
+
+.nav-pills .nav-link {
+  
+
+	width: 251px;
+    height: 160px;
+    margin-right: 24px; 
+	border: 2px solid #363636;
+    border-radius: 16px;
+	margin: 15px;
+}
+
+
+.coatchteam {
+	display: flex;
+	justify-content: start;
+	margin-top: 60px;
+	margin-bottom: 80px;
+}
+
+.coatchphotoframe {
+	width: 251px;
+	height: 160px;
+	background: #FFFFFF;
+	border: 2px solid #363636;
+	border-radius: 16px;
+	margin-right: 24px;
+	display: flex;
+	justify-content: start;
+	overflow: visible;
+
+
+}
+
+.coatchtitle{
+	background: #FFFFFF;
+	border: 2px solid #363636;
+	border-radius: 12px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	top:5%;
+	left:80%;
+	box-shadow: inset -4px -4px 0px 0px #363636;
+	position: absolute;
+}
+
+
+
+
+.nav-item{
+	position: relative;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
+
+.nav-item img
+{
+	position: absolute;
+	bottom: 14%;
+	left:10%;
+}
+
+.coatchteamframe {
+	
+
+	margin-bottom: 100px;
+}
+
+.coatchphotoframe :hover {
+	background: #E6EBFF;
+}
+
+.coachsignup {
+	width: 1076px;
+	height: 96px;
+	border: 2px solid #363636;
+	border-radius: 16px;
+	background: #E6EBFF;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: -49px;
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+}
+
+.signup a {
+
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.traininginstructions {
+	background: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.traininginstructions h3 {
+	margin-top: 60px;
+}
+
+.instructionset {
+	border-bottom: 2px solid #F0F0F0;
+	display: flex;
+	align-items: center;
+}
+
+
+/*培訓說明的p改為行內元素*/
+
+.inline {
+	display: inline;
+}
+
+.instructionset .inline {
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+/*設定培訓說明li*/
+.custom-counter {
+
+	list-style-type: lower-alpha;
+}
+
+.custom-counter li {
+
+	counter-increment: step-counter;
+
+}
+
+.custom-counter li::before {
+	content: counter(step-counter);
+	margin-right: 32px;
+	font-size: 80%px;
+	background: #E6EBFF;
+	color: #363636;
+	font-weight: bold;
+	/*padding: 4px 8px;*/
+	padding: 3px 6px 1px 6px;
+	border-radius: 20px;
+	border: 2px solid #363636;
+	font-family: custom-sans-serif;
+
+
+}
+
+
+.proponentbackground {
+	background: #F0F0F0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.proponent .title {
+
+	margin-bottom: -30px;
+	text-align: start;
+}
+
+.proponentbackground .proponentcontainer {
+	width: 1440px;
+	height: 312px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding-left: 72px;
+	padding-top: 56px;
+	padding-bottom: 40px;
+
+	white-space: nowrap;
+	/* 防止子元素换行 */
+
+
+}
+
+.companylogo {
+
+	width: 196px;
+	height: 148px;
+	display: inline-block;
+	/* 水平排列 */
+	align-items: center;
+	background: #FFFFFF;
+	border-radius: 12px;
+	margin-right: 24px;
+	vertical-align: middle;
+
+}
+
+.companylogo .logo {
+	width: 196px;
+	height: 148px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 16px;
+}
+
+.copyright {
+	height: 96px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+
+
+.aboutspacebackground {
+	display: flex;
+	justify-content: center;
+
+}
+
+.aboutspace {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1440px;
+	height: 540px;
+	background: #EEE6FF;
+	border-radius: 40px;
+	margin-top: -22px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	padding-left: 72px;
+	padding-right: 72px;
+
+}
+
+.aboutspace .word {
+
+
+	font-family: custom-sans-serif;
+
+
+
+}
+
+.aboutspace .word .narrative {
+	display: inline-block;
+	/*使他變成行內元素，並可設置寬高*/
+	width: 526px;
+	height: 240px;
+
+}
+
+
+
+
+.spaceinstructbackground {
+	display: flex;
+	justify-content: center;
+
+}
+
+
+
+
+.spaceinstruct .word {
+
+
+	font-family: custom-sans-serif;
+	margin-left: 48px;
+	display: flex;
+	flex-direction: column;
+
+
+
+
+
+
+}
+
+.spaceinstruct .word .narrative {
+	display: inline-block;
+	/*使他變成行內元素，並可設置寬高`,注意RWD需要修改*/
+	width: 494px;
+
+
+}
+
+.items {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 52px;
+}
+
+.sirvicebackground {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.service {
+	max-width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.spaceservicetitle {
+	display: flex;
+	justify-content: start;
+	margin-bottom: 32px;
+	margin-left: 10%;
+
+}
+
+.servicelogo {
+	width: 368px;
+	text-align: center;
+}
+
+.servicelogo img {
+	margin-bottom: 24px;
+}
+
+
+
+.spacephotobackground {
+	background: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.spacephotobackground .spacephotocontainer {
+
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	padding-top: 56px;
+	padding-bottom: 40px;
+	white-space: nowrap;
+	/* 防止子元素换行 */
+}
+
+
+.stationedbackground {
+	background: #EEE6FF;
+}
+
+
+.stationedbackground .bannerbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.stationedbackground .banner {
+	width: 526px;
+	height: 608px;
+	border: 2px solid #E0E0E0;
+	border-radius: 24px;
+	background: #FFFFFF;
+	margin-right: 24px;
+
+}
+
+.stationedbackground .body1{
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	margin: 0 auto;
+	margin-top: 36px;
+	margin-bottom: 20px;
+}
+
+.stationedbackground h2{
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	margin: 0 auto;
+	margin-bottom: 32px;
+}
+
+.stationedprice{
+	width: 365px;
+	height: 134px;
+	background: #F0F0F0;
+}
+
+
+
+.stationitem{
+	width: 365px;
+	display: flex;
+	text-align: left;
+	justify-content:center ;
+	align-items: center;
+	
+	
+	
+}
+
+
+.stationitem li
+{
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
+	letter-spacing: 0.02em;
+	color: #363636;
+	margin-bottom: 16px;
+	margin-left: 60px;
+	font-family: custom-sans-serif;
+	width: 200px;
+	line-height: 100%;
+}
+
+.stationedtitle{
+	width: 1076px;
+	margin: 0 auto;
+	margin-bottom: 32px;
+
+	
+}
+
+.stationedbackground .signup
+{
+	width: 1076px;
+	height: 96px;
+	border: 2px solid #363636;
+	border-radius: 16px;
+	background: #F5F1FF;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1076px;
+    max-height: 96px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    padding-left: 426px;
+    padding-right: 426px;
+}
+
+.promotion
+{
+	position: relative;
+	
+}
+
+.promotion img{
+	margin-top: 60px;
+}
+
+.promotion .promotiontext{
+	position: absolute;
+	text-align: center;
+	top: 57%;
+    left: 2%;
+
+	
+}
+
+
