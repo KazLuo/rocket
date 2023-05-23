@@ -90,7 +90,7 @@ video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	
+
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -207,19 +207,17 @@ mark {
 	padding: 2px 1px;
 }
 
-.mark{
+.mark {
 	background: #00000000;
 }
 
-a
-{
+a {
 	text-decoration: none;
 	color: #363636;
 
 }
 
-a:hover
-{
+a:hover {
 	text-decoration: none;
 	color: #363636;
 }
@@ -241,14 +239,14 @@ a:hover
 
 .body2 {
 	font-family: custom-sans-serif;
-	
+
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 150%;
 	text-align: start;
 	letter-spacing: 0.02em;
 	color: #363636;
-	
+
 }
 
 
@@ -311,7 +309,7 @@ mark.yellow {
 .banner {
 
 	width: 1440px;
-	height: 757px;
+	max-height: 757px;
 	background-image: url(image/banner-bg.png);
 }
 
@@ -321,20 +319,102 @@ mark.yellow {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 1076px;
+	max-width: 1076px;
 	height: 543px;
+	margin-bottom: 5%;
+	
 
 }
 
 .banner .container .banner-left {
 	width: 440px;
 	height: 448px;
-	margin-top: 127px;
 	border: 2px solid #E0E0E0;
 	border-radius: 24px;
 	background: #FFFFFF;
 	position: relative;
+	transition: top 1s ease;
+    top: 0;
 	
+
+}
+
+.title-logo
+{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: left;
+	align-items: center;
+}
+
+.banner .container .bannerup-m {
+	width: 294px;
+	height: 134px;
+	margin-top: 20%;
+	border: 2px solid #E0E0E0;
+	border-radius: 24px;
+	background: #FFFFFF;
+	position: relative;
+	display: none;
+	margin-top: 5%;
+	transition: top 1s ease;
+    top: 0;
+	
+
+}
+
+.banner .container .bannerup-m:hover {
+
+	box-shadow: inset -4px -4px 0px 0px #BFC9F0;
+	top: -10px;
+	
+
+}
+
+.banner .container .bannerdown-m:hover {
+
+	box-shadow: inset -4px -4px 0px 0px #EEE5FF;
+	top: -10px;
+	
+
+}
+
+.banner .container .banner-left:hover {
+
+	box-shadow: inset -4px -4px 0px 0px #BFC9F0;
+	top: -10px;
+	
+	
+	
+
+}
+
+.banner .container .banner-right:hover {
+
+	box-shadow: inset -4px -4px 0px 0px #EEE5FF;
+	top: -10px;
+	
+	
+
+}
+
+
+
+
+
+.banner .container .bannerdown-m {
+	width: 294px;
+	height: 134px;
+	margin-top: 20%;
+	border: 2px solid #E0E0E0;
+	border-radius: 24px;
+	background: #FFFFFF;
+	position: relative;
+	display: none;
+	margin-top: 5%;
+	transition: top 1s ease;
+    top: 0;
+
 }
 
 .banner .container .banner-left h1 {
@@ -344,12 +424,26 @@ mark.yellow {
 	left: 147px;
 
 }
-
 .banner .container .banner-left .body1 {
-	position: absolute;
-	text-align: center;
-	left: 117px;
-	top: 36px;
+    position: absolute;
+    text-align: center;
+    left: 117px;
+    top: 36px;
+    color: #9A9A9A;
+}
+
+.banner .container .bannerdown-m .body1 {
+
+	color: #9A9A9A;
+}
+
+.banner .container .bannerup-m .body1 {
+
+	color: #9A9A9A;
+}
+
+.banner .container .banner-right-m .body1 {
+
 	color: #9A9A9A;
 }
 
@@ -360,33 +454,51 @@ mark.yellow {
 .banner .container .banner-left .rocketlogo {
 	margin-top: 96px;
 	margin-left: 155px;
-	margin-bottom:16px;
+	margin-bottom: 16px;
 }
 
 .banner .container .banner-left .interestinglogo {
 	position: absolute;
-	margin-top: 40px;
-	margin-left: 155px;
-	margin-bottom:16px;
+    margin-top: 40px;
+    margin-left: 155px;
+    margin-bottom: 16px;
 }
+
+.banner .container .bannerup-m .interestinglogo-m {
+	position: absolute;
+    margin-left: 20%;
+    margin-top: -19%;
+}
+
+.banner .container .bannerdown-m .interestinglogo-m {
+	position: absolute;
+	margin-left: 85%;
+	margin-bottom: 3%;
+}
+
+
+
 .banner .container .banner-left .halfmoonlogo {
 	position: absolute;
 	margin-top: 115px;
-    margin-left: 155px;
-	margin-bottom:16px;
-    
+	margin-left: 155px;
+	margin-bottom: 16px;
+
 }
+
 
 /*--------------------------------*/
 .banner .container .banner-right {
 	width: 440px;
 	height: 448px;
-	margin-top: 127px;
+	
 	border: 2px solid #E0E0E0;
 	border-radius: 24px;
 	background: #FFFFFF;
 	position: relative;
-	
+    transition: top 1s ease;
+    top: 0;
+
 }
 
 .banner .container .banner-right h1 {
@@ -411,21 +523,39 @@ mark.yellow {
 .banner .container .banner-right .rocketlogo {
 	margin-top: 96px;
 	margin-left: 155px;
-	margin-bottom:16px;
+	margin-bottom: 16px;
 }
 
 .banner .container .banner-right .interestinglogo {
 	position: absolute;
 	margin-top: 40px;
 	margin-left: 155px;
-	margin-bottom:16px;
+	margin-bottom: 16px;
 }
+
 .banner .container .banner-right .halfmoonlogo {
 	position: absolute;
 	margin-top: 115px;
-    margin-left: 155px;
-	margin-bottom:16px;
-    
+	margin-left: 155px;
+	margin-bottom: 16px;
+
+}
+
+.banner .container .bannerdown-m .halfmoonlogo {
+	position: absolute;
+	position: absolute;
+	margin-left: 95%;
+	margin-bottom: 3%;
+
+
+}
+
+.banner .container .bannerup-m .halfmoonlogo {
+	position: absolute;
+	margin-left: 30%;
+	margin-top:-22%
+
+
 }
 
 
@@ -442,46 +572,51 @@ mark.yellow {
 
 .aboutrocketbackground {
 	display: flex;
+
 	justify-content: center;
+
 
 }
 
 .aboutrocket {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 	width: 1440px;
 	background-color: #E5EBFF;
 	border-radius: 40px;
 	margin-top: -22px;
 	padding-top: 60px;
 	padding-bottom: 60px;
-	padding-left: 72px;
-	padding-right: 72px;
+	padding-left: 5%;
+	padding-right: 5%;
 
 
-	
+
 
 }
+
+
 
 .aboutrocket .word {
 
 	font-family: custom-sans-serif;
-	width: 636px;
-	height: 592px;
+	max-width: 636px;
+
 
 
 }
 
 .aboutrocket .word .narrative {
-	width: 526px;
+	max-width: 526px;
 	height: 240px;
 
 }
 
 .aboutrocket .cardbox {
-	width: 636px;
-	height: 592px;
+	max-width: 636px;
+	max-height: 592px;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
@@ -490,14 +625,14 @@ mark.yellow {
 
 
 .aboutrocket .cardbox .frontend {
-	width: 636px;
-	
+	max-width: 636px;
 	background-color: #FFFFFF;
 	border-radius: 24px;
 	margin-bottom: 32px;
 	padding: 36px;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .aboutrocket .cardbox .skillicon {
@@ -536,23 +671,25 @@ mark.yellow {
 
 
 .aboutrocket .cardbox .backend {
-	width: 636px;
-	height: 280px;
+	max-width: 636px;
+
 	background-color: #FFFFFF;
 	border-radius: 24px;
 	margin-bottom: 32px;
 	padding: 36px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
 .aboutrocket .cardbox .uxui {
-	width: 636px;
-	height: 280px;
+	max-width: 636px;
+
 	background-color: #FFFFFF;
 	border-radius: 24px;
 	padding: 36px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 
 }
@@ -631,12 +768,30 @@ mark.yellow {
 	display: flex;
 	margin: 0 auto;
 	justify-content: center;
-	width: 636px;
+	max-width: 636px;
 	margin-bottom: 80px;
 
 }
 
-.batch .batchtitle {
+
+
+.batch-m {
+	background: #FFFFFF;
+	box-shadow: 0px 2px 4px #E8E8E8;
+	border-radius: 50px;
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+	max-width: 332px;
+	margin-bottom: 80px;
+	display: none;
+
+}
+
+.batchtitle {
 	font-weight: 700;
 	border-right: 2px solid #F0F0F0;
 	text-align: center;
@@ -660,8 +815,8 @@ mark.yellow {
 
 .abouttrainning .trainningdetail .frontend {
 	margin-top: -20px;
-	
-	height: 588px;
+
+
 	background: #FFFFFF;
 	border: 2px solid #F0F0F0;
 	border-radius: 16px;
@@ -672,14 +827,16 @@ mark.yellow {
 	align-items: center;
 	justify-content: space-evenly;
 	margin-bottom: 80px;
+	flex-wrap: wrap;
+	padding: 40px;
 
 
 }
 
 .abouttrainning .trainningdetail .backend {
 	margin-top: -20px;
-	
-	height: 384px;
+	flex-wrap: wrap;
+
 	background: #FFFFFF;
 	border: 2px solid #F0F0F0;
 	border-radius: 16px;
@@ -690,12 +847,13 @@ mark.yellow {
 	align-items: center;
 	justify-content: space-evenly;
 	margin-bottom: 80px;
-	height: 384px;
+	padding: 40px;
+
 }
 
 .abouttrainning .trainningdetail .ui {
 	margin-top: -20px;
-	height: 356px;
+	flex-wrap: wrap;
 	background: #FFFFFF;
 	border: 2px solid #F0F0F0;
 	border-radius: 16px;
@@ -706,7 +864,8 @@ mark.yellow {
 	align-items: center;
 	justify-content: space-evenly;
 	margin-bottom: 80px;
-	height: 384px;
+	padding: 40px;
+
 }
 
 
@@ -718,7 +877,7 @@ mark.yellow {
 	border-bottom: 3px solid #363636;
 	width: 82px;
 	font-family: custom-sans-serif;
-	
+
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 150%;
@@ -729,27 +888,32 @@ mark.yellow {
 
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #fff;
-    /* background-color: #0d6efd; */
-    background: #E6EBFF;
-    border: 2px solid #363636;
-    border-radius: 16px;
-    width: 251px;
-    height: 160px;
-    margin-right: 24px;
+.trainword {
+	margin-bottom: 30px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+	color: #fff;
+	/* background-color: #0d6efd; */
+	background: #E6EBFF;
+	border: 2px solid #363636;
+	border-radius: 16px;
+	width: 251px;
+	height: 160px;
+	margin-right: 24px;
 	margin: 30px;
-	
+
 }
 
 .nav-pills .nav-link {
-  
+
 
 	width: 251px;
-    height: 160px;
-    margin-right: 24px; 
+	height: 160px;
+	margin-right: 24px;
 	border: 2px solid #363636;
-    border-radius: 16px;
+	border-radius: 16px;
 	margin: 15px;
 }
 
@@ -775,7 +939,7 @@ mark.yellow {
 
 }
 
-.coatchtitle{
+.coatchtitle {
 	background: #FFFFFF;
 	border: 2px solid #363636;
 	border-radius: 12px;
@@ -783,8 +947,8 @@ mark.yellow {
 	padding-bottom: 16px;
 	padding-left: 16px;
 	padding-right: 16px;
-	top:5%;
-	left:80%;
+	top: 5%;
+	left: 80%;
 	box-shadow: inset -4px -4px 0px 0px #363636;
 	position: absolute;
 }
@@ -792,22 +956,21 @@ mark.yellow {
 
 
 
-.nav-item{
+.nav-item {
 	position: relative;
 	display: flex;
 	align-items: center;
-    justify-content: center;
+	justify-content: center;
 }
 
-.nav-item img
-{
+.nav-item img {
 	position: absolute;
 	bottom: 14%;
-	left:10%;
+	left: 10%;
 }
 
 .coatchteamframe {
-	
+
 
 	margin-bottom: 100px;
 }
@@ -817,7 +980,7 @@ mark.yellow {
 }
 
 .coachsignup {
-	width: 1076px;
+	max-width: 1076px;
 	height: 96px;
 	border: 2px solid #363636;
 	border-radius: 16px;
@@ -829,7 +992,6 @@ mark.yellow {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
 
 }
 
@@ -972,39 +1134,51 @@ mark.yellow {
 	justify-content: space-between;
 	align-items: center;
 	width: 1440px;
-	height: 540px;
 	background: #EEE6FF;
 	border-radius: 40px;
 	margin-top: -22px;
 	padding-top: 60px;
 	padding-bottom: 60px;
-	padding-left: 72px;
-	padding-right: 72px;
-
+	padding-left: 5%;
+	padding-right: 5%;
+	flex-direction: row;
 }
 
 .aboutspace .word {
 
 
 	font-family: custom-sans-serif;
-
-
+	order: 2;
+	max-width: 526px;
 
 }
 
 .aboutspace .word .narrative {
 	display: inline-block;
 	/*使他變成行內元素，並可設置寬高*/
-	width: 526px;
 	height: 240px;
 
+}
+
+
+iframe
+{
+	width:612px ;
+	height:396px;
+	
+}
+.aboutapace .map {
+	
+	display: flex;
+	
+	order: 1;
 }
 
 
 
 
 .spaceinstructbackground {
-	display: flex;
+
 	justify-content: center;
 
 }
@@ -1016,7 +1190,7 @@ mark.yellow {
 
 
 	font-family: custom-sans-serif;
-	margin-left: 48px;
+	margin-left: 5%;
 	display: flex;
 	flex-direction: column;
 
@@ -1030,7 +1204,7 @@ mark.yellow {
 .spaceinstruct .word .narrative {
 	display: inline-block;
 	/*使他變成行內元素，並可設置寬高`,注意RWD需要修改*/
-	width: 494px;
+	max-width: 494px;
 
 
 }
@@ -1074,6 +1248,10 @@ mark.yellow {
 	margin-bottom: 24px;
 }
 
+.service-logo-sm {
+	display: none;
+}
+
 
 
 .spacephotobackground {
@@ -1109,7 +1287,7 @@ mark.yellow {
 
 }
 
-.stationedbackground .banner {
+.stationedbackground .signbanner {
 	width: 526px;
 	height: 608px;
 	border: 2px solid #E0E0E0;
@@ -1119,24 +1297,24 @@ mark.yellow {
 
 }
 
-.stationedbackground .body1{
+.stationedbackground .body1 {
 	display: flex;
 	justify-content: center;
-    align-items: center;
+	align-items: center;
 	margin: 0 auto;
 	margin-top: 36px;
 	margin-bottom: 20px;
 }
 
-.stationedbackground h2{
+.stationedbackground h2 {
 	display: flex;
 	justify-content: center;
-    align-items: center;
+	align-items: center;
 	margin: 0 auto;
 	margin-bottom: 32px;
 }
 
-.stationedprice{
+.stationedprice {
 	width: 365px;
 	height: 134px;
 	background: #F0F0F0;
@@ -1144,20 +1322,19 @@ mark.yellow {
 
 
 
-.stationitem{
+.stationitem {
 	width: 365px;
 	display: flex;
 	text-align: left;
-	justify-content:center ;
+	justify-content: center;
 	align-items: center;
-	
-	
-	
+
+
+
 }
 
 
-.stationitem li
-{
+.stationitem li {
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 150%;
@@ -1170,52 +1347,199 @@ mark.yellow {
 	line-height: 100%;
 }
 
-.stationedtitle{
-	width: 1076px;
+.stationedtitle {
+	max-width: 1076px;
 	margin: 0 auto;
 	margin-bottom: 32px;
 
-	
+
 }
 
-.stationedbackground .signup
-{
-	width: 1076px;
+.signup {
+
+	background: #F5F1FF;
+
+
+
+	max-width: 1076px;
 	height: 96px;
 	border: 2px solid #363636;
 	border-radius: 16px;
-	background: #F5F1FF;
+
 	text-align: center;
 	margin: 0 auto;
 	margin-top: 30px;
+	margin-bottom: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	max-width: 1076px;
-    max-height: 96px;
-    padding-bottom: 24px;
-    padding-top: 24px;
-    padding-left: 426px;
-    padding-right: 426px;
 }
 
-.promotion
-{
+.promotion {
 	position: relative;
-	
+
 }
 
-.promotion img{
+.promotion img {
 	margin-top: 60px;
 }
 
-.promotion .promotiontext{
+.promotion .promotiontext {
 	position: absolute;
 	text-align: center;
 	top: 57%;
-    left: 2%;
+	left: 2%;
 
-	
+
 }
 
+@media(max-width:1230px) {
+	
+	.banner-left,.banner-right,.x {
+		display: none;
+	}
 
+	.banner .container .bannerup-m,.banner .container .bannerdown-m {
+		display: block;
+		margin: 0 auto;
+		margin-top: 10%;
+		padding: 3%;
+	}
+
+	.banner .container
+	{
+		display: block;
+		margin-bottom: -10%;
+	}
+
+
+	.aboutrocket {
+		justify-content: center;
+	}
+
+	.aboutrocket .word {
+
+		margin-bottom: 24px;
+
+	}
+
+	.aboutspace .word {
+		font-family: custom-sans-serif;
+		order: 1;
+	}
+
+
+	.aboutspace .map {
+		order: 2;
+	}
+
+	.aboutspace {
+		flex-direction: column;
+	}
+
+	.items {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.items .word {
+		order: 2;
+		margin-top: 30px;
+	}
+
+	.items img {
+		order: 1;
+	}
+
+	.servicelogo {
+		display: flex;
+	}
+
+	.service {
+		flex-direction: column;
+	}
+
+	.servicelogo img {
+
+
+		padding-right: 16px;
+	}
+
+	.servicetext {
+		text-align: start;
+	}
+
+	p {
+		line-height: 150%;
+	}
+
+	.service-logo-sm {
+		display: flex;
+	}
+
+	.service-logo-lg {
+		display: none;
+	}
+
+	.servicelogo {
+		margin-bottom: 28px;
+	}
+
+	@media(max-width:490px) {
+
+		
+
+		iframe {
+			width: 130%;
+			margin-left: -40px;
+		}
+
+		.aboutrocket .cardbox .skillicon {
+			font-family: custom-sans-serif;
+			font-weight: 700;
+			font-size: 2px;
+			line-height: 150%;
+			/* identical to box height, or 24px */
+			letter-spacing: 0.02em;
+			color: #7F94E2;
+			border: 2px solid #A6B6F1;
+			border-radius: 20px;
+			padding: 8px 16px;
+			text-align: center;
+			display: inline-block;
+			margin-right: 12px;
+		}
+
+		.aboutrocket .cardbox .frontend {
+			justify-content: center;
+		}
+
+		.aboutrocket .cardbox .backend {
+			justify-content: center;
+		}
+
+		.aboutrocket .cardbox .uxui {
+			justify-content: center;
+		}
+
+		.batch {
+			display: none;
+		}
+
+		.batch-m {
+			display: flex;
+		}
+
+		.stationedbackground .bannerbox {
+			justify-content: left;
+			padding: 5%;
+
+
+
+
+
+		}
+
+
+	}
+}
