@@ -1068,10 +1068,22 @@ mark.yellow {
 	align-items: center;
 }
 
-.proponent .title {
 
+.proponent{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.proponent .title {
 	margin-bottom: -30px;
-	text-align: start;
+}
+
+.proptitle{
+	width: 1440px;
+	padding-left: 72px;
+	
 }
 
 .proponentbackground .proponentcontainer {
